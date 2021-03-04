@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'qxe0yof',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>PORTFORIO</title>
+</head>
+
+<body>
+    <div class="area">
+
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+
+
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="title">
+                <h1 class="animate__animated animate__fadeInUp">RIKUTO NODA</h1>
+                <p>PORTFORIO</p>
+            </div>
+
+            <a href="#about"><span></span>Scroll</a>
+
+        </header>
+
+        <main id="main">
+
+            <!-- about -->
+            <section id="about" class="about">
+
+                <div data-aos="fade-right" data-aos-duration="800" data-aos-anchor-placement="top-center">
+
+                    <h2 class="about-title section-title">ABOUT</h2>
+                    <h3 class="about-name">RIKUTO NODA</h3>
+                    <p>HAL名古屋 WEB開発学科 3年生</p>
+                    <p class="about-des1">使用言語</p>
+                    <p class="about-des">HTML/CSS , Javascript Photoshop , illustrator , XD</p>
+                </div>
+
+            </section>
+
+
+            <!-- works -->
+            <section id="work" class="works">
+
+                <h2 class="section-title">WEB DESIGN</h2>
+
+                <div class="grid" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
+
+                    <a href="https://rikuto13ten.github.io/atutazingu_rikuto/index.html" target="_blank">
+                        <img src="images/work1.png" alt="">
+                        <!-- <p>リニューアルサイト</p> -->
+                    </a>
+
+                    <a href="https://rikuto13ten.github.io/zakka/index.html" target=”_blank”>
+                        <img src="images/work2.png" alt="">
+                        <!-- <p>森の雑貨屋さん</p> -->
+                    </a>
+
+                    <a href="https://rikuto13ten.github.io/map/index.html" target="_blank">
+                        <img src="images/work4.png" alt="">
+                    </a>
+
+                    <a href="https://rikuto13ten.github.io/hal/index.html" target="_blank">
+                        <img src="images/work5.png" alt="">
+                    </a>
+
+                </div>
+            </section>
+
+
+
+            <!-- contact -->
+            <section id="contact" class="contact">
+
+                <h2 class="section-title">CONTACT</h2>
+
+                <form action="post" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-center">
+
+                    <input type="text" placeholder="お名前">
+
+                    <input type="text" placeholder="メールアドレス">
+
+                    <textarea name="form" id="" cols="30" rows="10" placeholder="お問い合わせ内容"></textarea>
+
+                    <button>
+                        お問い合わせ
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer>
+            copyright 2020 Rikuto Noda
+        </footer>
+
+    </div>
+</body>
+
+</html>
